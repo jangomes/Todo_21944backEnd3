@@ -26,6 +26,9 @@ Optional for higher grade:  Extend the App to add login authentication.
 ### Report:
 To develop this website I followed the
 
+![image](https://user-images.githubusercontent.com/90685145/230716395-5f2ef95f-8a9e-45d0-9bd2-339ce243fedc.png)
+
+
 
 ## References:
 
