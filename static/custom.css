@@ -1,0 +1,64 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.todo {
+  padding: 20px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,.1);
+}
+
+.todo p {
+  margin: 0;
+}
+
+.todo i {
+  font-style: italic;
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,.1);
+  width: 100%;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}

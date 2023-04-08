@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='custom.css') }}">
+    <meta charset="UTF-8">
+    <title>Update Todo</title>
+    <style>
+        .todo {
+            padding: 20px;
+            margin: 10px;
+            background-color: #eee;
+        }
+        .form-group{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Update Todo</h1>
+    <hr>
+    <div class="content">
+    <form method="post">
+        <input type="hidden" name="_id" value="{{ todo['_id'] }}">
+        <p>
+            <b><label for="content">Todo content</label></b>
+        </p>
+        <p>
+            <input type="text" name="content"
+                placeholder="Todo Content" value="{{ todo['content'] }}"></input>
+        </p>
+
+        <p>
+            <b><label for="degree">Degree</label></b>
+        </p>
+        <p>
+            <input id="degree-0" name="degree" required type="radio" value="Important" {% if todo['degree'] == 'Important' %} checked {% endif %}>
+            <label for="degree-0">Important</label>
+        </p>
+        <p>
+            <input id="degree-1" name="degree" required type="radio" value="Unimportant" {% if todo['degree'] == 'Unimportant' %} checked {% endif %}>
+            <label for="degree-1">Unimportant</label>
+        </p>
+        <!-- -->
+        <p>
+            <b><label for="completed">Completed</label></b>
+        </p>
+        <p>
+            <input id="completed-0" name="completed" required type="radio" value="Yes" {% if todo['completed'] %} checked {% endif %}>
+            <label for="completed-0">Yes</label>
+        </p>
+        <!-- -->
+        <div class="form-group">
+            <button type="submit">Update</button>
+            <a href="{{ url_for('index') }}">Cancel</a>
+        </div>
+    </form>
+    </div>
+</body>
+</html>

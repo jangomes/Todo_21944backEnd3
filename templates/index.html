@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" type="text/css" href="static/custom.css">
+
+    <meta charset="UTF-8">
+    <title>FlaskApp</title>
+    <style>
+        .todo {
+            padding: 20px;
+            margin: 10px;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <h1>FlaskTODO</h1>
+    <hr>
+    <div class="content">
+    <form method="post">
+        <p>
+            <b><label for="content">Todo content</label></b>
+        </p>
+        <p>
+            <input type="text" name="content"
+                placeholder="Todo Content"></input>
+        </p>
+
+        <p>
+            <b><label for="degree">Degree</label></b>
+        </p>
+        <p>
+            <input id="degree-0" name="degree" required type="radio" value="Important">
+            <label for="degree-0">Important</label>
+        </p>
+        <p>
+            <input id="degree-1" name="degree" required type="radio" value="Unimportant">
+            <label for="degree-1">Unimportant</label>
+        </p>
+
+        <!--- Start due date--->
+
+
+        <!--- Finish  --->
+        <button type="submit">Submit</button>
+    </form>
+    <hr>
+    {% for todo in todos %}
+        <div class="todo">
+            <p>{{ todo['content'] }} <i>({{ todo['degree']}})</i></p>
+            <p>Completed: {% if todo['completed'] %}Yes{% else %}No{% endif %}</p> <!-- add the "completed" field -->
+            <form method="POST" action="{{ url_for('delete', id=todo['_id']) }}" >
+                <br>
+                <input type="submit" value="Delete Todo"
+                       onclick="return confirm('Are you sure you want to delete this entry?')">
+            </form>
+            <form method="GET" action="{{ url_for('update', id=todo['_id']) }}">
+                <button type="submit">Update Todo</button>
+            </form>
+        </div>
+    {% endfor %}
+    </div>
+</body>
+</html>
