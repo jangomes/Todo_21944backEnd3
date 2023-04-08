@@ -29,6 +29,20 @@ To develop this website I followed the
 ![image](https://user-images.githubusercontent.com/90685145/230716395-5f2ef95f-8a9e-45d0-9bd2-339ce243fedc.png)
 
 
+![image](https://user-images.githubusercontent.com/90685145/230716404-af88c52b-4e80-42e3-8fcb-4f96bb982a4e.png)
+
+
+![image](https://user-images.githubusercontent.com/90685145/230716409-d6a68f48-1606-4f80-9199-199c01ebb3fe.png)
+
+
+![image](https://user-images.githubusercontent.com/90685145/230716422-c85d4935-fcb4-49d0-9584-286066f29097.png)
+
+
+![image](https://user-images.githubusercontent.com/90685145/230716435-d1b07d0d-0ca6-4b2f-bfe1-24456c81ac78.png)
+
+
+![image](https://user-images.githubusercontent.com/90685145/230716446-13ea8fee-01bd-41a6-a5c2-d410a1ea9bbc.png)
+
 
 ## References:
 
