@@ -20,6 +20,7 @@ Optional for higher grade:  Extend the App to add login authentication.
 - [X] - 10% - Document the testing of the function and the assertions being used.
 - [X] - 20% - Create a readme file with screen shots of App working
 - [X] - 40% - Extend the App to use a new feature for the ToDo App and/or Use a new Data object for the App
+- 
  [] - 10% - Optional for higher grade:  Extend the App to add login authentication.
 
 ### Report:
